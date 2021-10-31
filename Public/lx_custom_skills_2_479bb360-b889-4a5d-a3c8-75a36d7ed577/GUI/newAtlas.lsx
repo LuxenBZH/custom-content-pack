@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" />
+    <version major="3" minor="6" revision="6" build="0" />
+    <region id="IconUVList">
+        <node id="root">
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="rune_clear_minded" type="22" />
+                    <attribute id="U1" value="0.109497" type="6" />
+                    <attribute id="U2" value="0.124878" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="rune_darlan" type="22" />
+                    <attribute id="U1" value="0.125122" type="6" />
+                    <attribute id="U2" value="0.140503" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="rune_firstblood" type="22" />
+                    <attribute id="U1" value="0.140747" type="6" />
+                    <attribute id="U2" value="0.156128" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="rune_kamlan" type="22" />
+                    <attribute id="U1" value="0.156372" type="6" />
+                    <attribute id="U2" value="0.171753" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="rune_stoicism" type="22" />
+                    <attribute id="U1" value="0.171997" type="6" />
+                    <attribute id="U2" value="0.187378" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="skill_defensive_awareness" type="22" />
+                    <attribute id="U1" value="0.0938721" type="6" />
+                    <attribute id="U2" value="0.109253" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="skill_duelist_leadership" type="22" />
+                    <attribute id="U1" value="0.0157471" type="6" />
+                    <attribute id="U2" value="0.0311279" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="skill_horii_stasis" type="22" />
+                    <attribute id="U1" value="0.0313721" type="6" />
+                    <attribute id="U2" value="0.0467529" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="skill_hunt_hunted" type="22" />
+                    <attribute id="U1" value="0.0469971" type="6" />
+                    <attribute id="U2" value="0.0623779" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="skill_hunt_is_hunted" type="22" />
+                    <attribute id="U1" value="0.0626221" type="6" />
+                    <attribute id="U2" value="0.0780029" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="skill_kick" type="22" />
+                    <attribute id="U1" value="0.0782471" type="6" />
+                    <attribute id="U2" value="0.0936279" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="skills_lx_slice_and_dice" type="22" />
+                    <attribute id="U1" value="0.00012207" type="6" />
+                    <attribute id="U2" value="0.0155029" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+            </children>
+        </node>
+    </region>
+    <region id="TextureAtlasInfo">
+        <node id="root">
+            <children>
+                <node id="TextureAtlasIconSize">
+                    <attribute id="Height" value="64" type="4" />
+                    <attribute id="Width" value="64" type="4" />
+                </node>
+                <node id="TextureAtlasPath">
+                    <attribute id="Path" value="Assets/Textures/Icons/newAtlas.dds" type="20" />
+                    <attribute id="UUID" value="aee9460c-da10-4483-814f-0d6d95c5c354" type="22" />
+                </node>
+                <node id="TextureAtlasTextureSize">
+                    <attribute id="Height" value="4096" type="4" />
+                    <attribute id="Width" value="4096" type="4" />
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

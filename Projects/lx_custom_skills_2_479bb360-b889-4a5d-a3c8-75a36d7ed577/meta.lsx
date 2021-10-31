@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" />
+    <version major="3" minor="6" revision="6" build="0" />
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="Module" value="479bb360-b889-4a5d-a3c8-75a36d7ed577" type="23" />
+            <attribute id="Name" value="lx_custom_skills_2" type="23" />
+            <attribute id="Type" value="Add-on" type="23" />
+            <attribute id="UUID" value="01ed167e-53fa-4d15-a67e-5e19fa9a30f4" type="23" />
+        </node>
+    </region>
+</save>

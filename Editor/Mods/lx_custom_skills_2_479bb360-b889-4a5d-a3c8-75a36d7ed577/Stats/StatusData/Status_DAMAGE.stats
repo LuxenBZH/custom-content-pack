@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="83b6cb1d-ada3-422f-893b-da1abd4adae3">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_NEUROTOXIN" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Neurotoxin" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="If the victim has no magic armour when this status expires, inflict [1] and set Stunned for 1 turn." />
+        <field name="DescriptionParams" type="StringStatObjectFieldDefinition" value="Damage" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="CMP_Skill_Antivenom_Dome" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="FormatStringColor" />
+        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="AttributeFlag" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Neurotoxin" />
+        <field name="DamageEvent" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="StatusEvent" />
+        <field name="DamageStats" type="StringStatObjectFieldDefinition" value="LX_Skill_Neurotoxin" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_NEUROTOXIN_APPLY" />
+        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="AttributeFlag" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Neurotoxin" />
+        <field name="DamageEvent" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="StatusEvent" />
+        <field name="DamageStats" type="StringStatObjectFieldDefinition" value="LX_Skill_Neurotoxin" />
+        <field name="DeathType" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="Death Type" />
+        <field name="DamageCharacters" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="DamageItems" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DamageTorches" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="239de60a-29b5-4010-bf7d-f6169d4ddd8a">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="_LX_Boost_Armor_Reflect_As_Physical_Damage" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_BOOSTS_Armor" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="12" />
+        <field name="Reflection" type="StringStatObjectFieldDefinition" value="25::Physical:melee" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="_Boost_LX_Armor_Amulet_Rune_LOOT_Rune_Special_Clear_Minded" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="30" />
+        <field name="ModifierType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="ModifierType" />
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
+        <field name="Slot" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="Itemslot" />
+        <field name="RuneSlots" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="RuneSlots_V1" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Tags" type="StringStatObjectFieldDefinition" value="LX_RUNE_CLEAR_MIND" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="_Boost_LX_Upperbody_Nothing" />
+        <field name="ModifierType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="ModifierType" />
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
+        <field name="Slot" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="Itemslot" />
+        <field name="RuneSlots" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="RuneSlots_V1" type="IntegerStatObjectFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="_Boost_LX_Armor_Amulet_Rune_LOOT_Rune_Special_Darlan" />
+        <field name="ModifierType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="ModifierType" />
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
+        <field name="Slot" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="Itemslot" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="30" />
+        <field name="Earth" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Tags" type="StringStatObjectFieldDefinition" value="LX_RUNE_DARLAN" />
+        <field name="Flags" type="EnumerationListStatObjectFieldDefinition" value="17" enumeration_type_name="AttributeFlags" />
+        <field name="RuneSlots" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="RuneSlots_V1" type="IntegerStatObjectFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="_Boost_LX_Armor_Amulet_Rune_LOOT_Rune_Special_Kamlan" />
+        <field name="ModifierType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="ModifierType" />
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
+        <field name="Slot" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="Itemslot" />
+        <field name="RuneSlots" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="RuneSlots_V1" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="30" />
+        <field name="Tags" type="StringStatObjectFieldDefinition" value="LX_RUNE_KAMLAN" />
+        <field name="Flags" type="EnumerationListStatObjectFieldDefinition" value="11" enumeration_type_name="AttributeFlags" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="_Boost_LX_Armor_Amulet_Rune_LOOT_Rune_Special_FirstBlood" />
+        <field name="ModifierType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="ModifierType" />
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
+        <field name="Slot" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="Itemslot" />
+        <field name="RuneSlots" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="RuneSlots_V1" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="30" />
+        <field name="Tags" type="StringStatObjectFieldDefinition" value="LX_RUNE_FIRSTBLOOD" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="_Boost_LX_Armor_Amulet_Rune_LOOT_Rune_Special_Stoicism" />
+        <field name="ModifierType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="ModifierType" />
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
+        <field name="Slot" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="Itemslot" />
+        <field name="RuneSlots" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="RuneSlots_V1" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="30" />
+        <field name="Tags" type="StringStatObjectFieldDefinition" value="LX_RUNE_STOICISM" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

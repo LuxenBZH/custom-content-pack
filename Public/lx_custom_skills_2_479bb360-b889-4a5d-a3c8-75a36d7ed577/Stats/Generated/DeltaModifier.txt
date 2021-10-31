@@ -1,0 +1,10 @@
+new deltamod "LX_Boost_Armor_Amulet_Special_Reflect_As_Physical_Damage"
+param "BoostType" "Rune"
+param "MinLevel" "9"
+param "MaxLevel" "20"
+param "Frequency" "0"
+param "ModifierType" "Armor"
+param "SlotType" "Amulet"
+new boost "_LX_Boost_Armor_Reflect_As_Physical_Damage",1
+
+

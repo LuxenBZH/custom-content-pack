@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e2a8d59b-0e34-4a7c-bf5f-db7a2bb34cde">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_HORIISTASISAURA" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Horii Stasis" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Reduce the damage of this character." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="skill_horii_stasis" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="5" enumeration_type_name="FormatStringColor" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_HoriiStasisAura" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_HoriiStasis" />
+        <field name="AuraRadius" type="IntegerStatObjectFieldDefinition" value="5" />
+        <field name="AuraAllies" type="StringStatObjectFieldDefinition" value="LX_HORIISTASIS" />
+        <field name="AuraNeutrals" type="StringStatObjectFieldDefinition" value="LX_HORIISTASIS" />
+        <field name="AuraEnemies" type="StringStatObjectFieldDefinition" value="LX_HORIISTASIS" />
+        <field name="AuraItems" type="StringStatObjectFieldDefinition" value="LX_HORIISTASIS" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Custom_Skills_Horii_Stasis,KeepRot" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_DUELISTLEADERSHIP" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Duelist Leadership" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Increase the character Leadership." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="skill_duelist_leadership" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="15" enumeration_type_name="FormatStringColor" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_DuelistLeadership" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_DuelistLeadership" />
+        <field name="ApplyEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Custom_Skills_Duelist_Leadership" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_HUNTISHUNTED" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Fleeing" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Increase the character dodge and movement." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="skill_hunt_is_hunted" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="8" enumeration_type_name="FormatStringColor" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_HuntIsHunted" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_HuntHunted" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_HUNTHUNTED" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Hunt or be Hunted" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Increase the character dodge and movement. If this character attacks, then it gets a damage bonus instead of the dodge." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="skill_hunt_hunted" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="8" enumeration_type_name="FormatStringColor" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_HuntHunted" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_HuntHunted" />
+        <field name="ApplyEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Divine_Farsight_Cast_Root_01:root" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_ONTHEHUNT" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="On the Hunt" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Increase the character damage and movement." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="skill_hunt_hunted" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="8" enumeration_type_name="FormatStringColor" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_OnTheHunt" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_HuntHunted" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_HORIISTASIS" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Horii Stasis" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Reduce the damage of this character." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="skill_horii_stasis" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="5" enumeration_type_name="FormatStringColor" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_HoriiStasis" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_HoriiStasis" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_SINFUSION_UNKNOWN" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="???" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="CMP_ER_Bomb_status" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="TSP_FX_Status_Sinfusion_01:Dummy_BodyFX" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Sinfusion" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_DEFENSIVEFORMATION" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Defensive Awareness" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character's defense is increased by nearby characters." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="skill_defensive_awareness" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="8" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_ThickOfTheFight_Hand_01:Dummy_L_HandFX,Dummy_R_HandFX" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_DefensiveFormation" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_DefensiveFormation" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_FIRSTBLOOD" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="First Blood" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Empowered by the Rune of First Blood" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="rune_firstblood" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="FormatStringColor" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_FirstBlood" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_RuneFirstBlood" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_FIRSTBLOOD_WEAKENED" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="First Blood" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Already attacked once this turn." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="rune_firstblood" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="FormatStringColor" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_FirstBloodWeakened" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_RuneFirstBlood" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_MASSTELEPORT" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Incoming Teleportation" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="This character will teleport to a remote destination once this status runs out." />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Air_InvisibleTarget" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_MassTeleport" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

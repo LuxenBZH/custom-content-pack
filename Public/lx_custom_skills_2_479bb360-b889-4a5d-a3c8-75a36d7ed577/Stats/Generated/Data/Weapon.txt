@@ -1,0 +1,15 @@
+new entry "_Boost_LX_Runes_Weapon_Nothing"
+type "Weapon"
+data "ModifierType" "Item"
+data "Act" "1"
+data "RuneSlots" "0"
+data "RuneSlots_V1" "0"
+
+new entry "LX_Skill_Neurotoxin"
+type "Weapon"
+data "ModifierType" "Skill"
+data "Damage Type" "Poison"
+data "Damage" "1"
+data "Damage Range" "10"
+data "DamageFromBase" "250"
+

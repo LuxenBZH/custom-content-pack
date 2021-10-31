@@ -1,0 +1,19 @@
+EVENTS
+
+EVENT GetSight
+VARS
+	CHARACTER: _Char
+	ITEM: _Item
+	FLOAT3: _CharPos
+ON
+	OnCharacterItemEvent(_Char, _Item, "LXS_GetSight")
+ACTIONS
+	GetPosition(_Char, _CharPos)
+	Add(_CharPos, {0;1.5;0})
+	IF "c1"
+		CanSee(_CharPos, _Item)
+	THEN
+		CharacterApplyStatus(_Char, "BLESSED", 1, 1) 
+		CharacterItemEvent(_Char, _Item, "LXS_CanSee")
+	ENDIF
+	

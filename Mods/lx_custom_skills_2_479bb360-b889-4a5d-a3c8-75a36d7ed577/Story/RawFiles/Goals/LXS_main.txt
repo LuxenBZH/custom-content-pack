@@ -1,0 +1,33 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+NRD_OnHit(_, _, _, _)
+THEN
+DB_NOOP(1);
+
+IF
+NRD_OnPrepareHit(_,_,_,_)
+THEN
+DB_NOOP(1);
+
+IF
+RuneInserted(_Character,_,_,_)
+THEN
+DB_NOOP(1);
+
+IF
+NRD_OnStatusAttempt(_,_,_,_)
+THEN
+DB_NOOP(1);
+
+IF
+ObjectTurnEnded(_)
+THEN
+DB_NOOP(1);
+
+EXITSECTION
+
+ENDEXITSECTION

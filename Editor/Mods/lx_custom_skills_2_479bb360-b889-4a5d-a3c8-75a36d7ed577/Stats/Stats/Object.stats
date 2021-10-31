@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e078e210-b9ba-48e5-afe3-c5eb91ba8545">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_LOOT_Rune_Special_Clear_Mind" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Runes" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="f683ef30-97a1-48df-af3a-af13130bfa3b" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="2000" />
+        <field name="RuneLevel" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="RuneEffectAmulet" type="StringStatObjectFieldDefinition" value="_Boost_LX_Armor_Amulet_Rune_LOOT_Rune_Special_Clear_Minded" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="Rune" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="7" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="12" />
+        <field name="MaxLevel" type="IntegerStatObjectFieldDefinition" value="30" />
+        <field name="RuneEffectWeapon" type="StringStatObjectFieldDefinition" value="_Boost_LX_Runes_Weapon_Nothing" />
+        <field name="RuneEffectUpperbody" type="StringStatObjectFieldDefinition" value="_Boost_LX_Upperbody_Nothing" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_LOOT_Rune_Special_Darlan" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Runes" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="3edd65ad-1aa4-43e1-9d27-be764987263b" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="2000" />
+        <field name="RuneLevel" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="RuneEffectWeapon" type="StringStatObjectFieldDefinition" value="_Boost_LX_Runes_Weapon_Nothing" />
+        <field name="RuneEffectUpperbody" type="StringStatObjectFieldDefinition" value="_Boost_LX_Upperbody_Nothing" />
+        <field name="RuneEffectAmulet" type="StringStatObjectFieldDefinition" value="_Boost_LX_Armor_Amulet_Rune_LOOT_Rune_Special_Darlan" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="Rune" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="7" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="12" />
+        <field name="MaxLevel" type="IntegerStatObjectFieldDefinition" value="30" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_LOOT_Rune_Special_FirstBlood" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Runes" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="c66c7a04-759d-4c9c-8590-771140da01bb" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="2000" />
+        <field name="RuneLevel" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="RuneEffectWeapon" type="StringStatObjectFieldDefinition" value="_Boost_LX_Runes_Weapon_Nothing" />
+        <field name="RuneEffectUpperbody" type="StringStatObjectFieldDefinition" value="_Boost_LX_Upperbody_Nothing" />
+        <field name="RuneEffectAmulet" type="StringStatObjectFieldDefinition" value="_Boost_LX_Armor_Amulet_Rune_LOOT_Rune_Special_FirstBlood" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="Rune" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="7" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="12" />
+        <field name="MaxLevel" type="IntegerStatObjectFieldDefinition" value="30" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_LOOT_Rune_Special_Kamlan" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Runes" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="07c61b74-b2b4-4cc2-810f-0b92e75a116f" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="2000" />
+        <field name="RuneLevel" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="RuneEffectWeapon" type="StringStatObjectFieldDefinition" value="_Boost_LX_Runes_Weapon_Nothing" />
+        <field name="RuneEffectUpperbody" type="StringStatObjectFieldDefinition" value="_Boost_LX_Upperbody_Nothing" />
+        <field name="RuneEffectAmulet" type="StringStatObjectFieldDefinition" value="_Boost_LX_Armor_Amulet_Rune_LOOT_Rune_Special_Kamlan" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="Rune" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="7" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="12" />
+        <field name="MaxLevel" type="IntegerStatObjectFieldDefinition" value="30" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_LOOT_Rune_Special_Stoicism" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Runes" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="d9a0e3f7-ff50-433c-a03d-e43ff85d5ed0" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="2000" />
+        <field name="RuneLevel" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="RuneEffectWeapon" type="StringStatObjectFieldDefinition" value="_Boost_LX_Runes_Weapon_Nothing" />
+        <field name="RuneEffectUpperbody" type="StringStatObjectFieldDefinition" value="_Boost_LX_Upperbody_Nothing" />
+        <field name="RuneEffectAmulet" type="StringStatObjectFieldDefinition" value="_Boost_LX_Armor_Amulet_Rune_LOOT_Rune_Special_Stoicism" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="Rune" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="7" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="12" />
+        <field name="MaxLevel" type="IntegerStatObjectFieldDefinition" value="30" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_GRN_Throwable_Javelin" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Grenades" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="42f082f5-77c7-4910-8c3d-adf2a8ffd790" />
+        <field name="Constitution" type="EnumerationStatObjectFieldDefinition" value="11" enumeration_type_name="PreciseQualifier" />
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="5" enumeration_type_name="ActPart" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="80" />
+        <field name="Weight" type="IntegerStatObjectFieldDefinition" value="1000" />
+        <field name="ObjectCategory" type="StringStatObjectFieldDefinition" value="GrenadeEarly" />
+        <field name="MinAmount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxAmount" type="IntegerStatObjectFieldDefinition" value="10" />
+        <field name="Priority" type="IntegerStatObjectFieldDefinition" value="2" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="5" />
+        <field name="MaxLevel" type="IntegerStatObjectFieldDefinition" value="35" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" />
+    <version major="3" minor="6" revision="6" build="0" />
+    <region id="IconUVList">
+        <node id="root">
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="c7d33e26-9103-438b-a126-9836f627392b_10378655429810720739-Class_Knight_Humans_(Icon_Human_Male)" type="22" />
+                    <attribute id="U1" value="0.000976563" type="6" />
+                    <attribute id="U2" value="0.155273" type="6" />
+                    <attribute id="V1" value="0.00195313" type="6" />
+                    <attribute id="V2" value="0.388672" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="c7d33e26-9103-438b-a126-9836f627392b_10378655429815173119-Ghoul_A_Unarmed_Strong_(Icon_Human_Male)" type="22" />
+                    <attribute id="U1" value="0.157227" type="6" />
+                    <attribute id="U2" value="0.311523" type="6" />
+                    <attribute id="V1" value="0.00195313" type="6" />
+                    <attribute id="V2" value="0.388672" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="c7d33e26-9103-438b-a126-9836f627392b_10378655429876809727-LX_GuardianArmor_Arms_(Icon_Human_Male)" type="22" />
+                    <attribute id="U1" value="0.313477" type="6" />
+                    <attribute id="U2" value="0.467773" type="6" />
+                    <attribute id="V1" value="0.00195313" type="6" />
+                    <attribute id="V2" value="0.388672" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="c7d33e26-9103-438b-a126-9836f627392b_10378655429877026787-LX_GuardianArmor_(Icon_Human_Male)" type="22" />
+                    <attribute id="U1" value="0.469727" type="6" />
+                    <attribute id="U2" value="0.624023" type="6" />
+                    <attribute id="V1" value="0.00195313" type="6" />
+                    <attribute id="V2" value="0.388672" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="c7d33e26-9103-438b-a126-9836f627392b_10378655429877039103-LX_GuardianArmor_Sword_(Icon_Human_Male)" type="22" />
+                    <attribute id="U1" value="0.625977" type="6" />
+                    <attribute id="U2" value="0.780273" type="6" />
+                    <attribute id="V1" value="0.00195313" type="6" />
+                    <attribute id="V2" value="0.388672" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="cdf596a9-7a41-481b-9ff4-d3ba7eaa4d8f_9518362775451736065-MaleHero_(Icon_Human_Male)" type="22" />
+                    <attribute id="U1" value="0.782227" type="6" />
+                    <attribute id="U2" value="0.936523" type="6" />
+                    <attribute id="V1" value="0.00195313" type="6" />
+                    <attribute id="V2" value="0.388672" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="d80be1aa-afee-43f1-89c5-9303abc302dd_10094860348286618849-GEN_Brutes_Melee_Sword_(Icon_Human_Female)" type="22" />
+                    <attribute id="U1" value="0.000976563" type="6" />
+                    <attribute id="U2" value="0.155273" type="6" />
+                    <attribute id="V1" value="0.392578" type="6" />
+                    <attribute id="V2" value="0.779297" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="ed930554-96d6-40d4-88c2-711942e0b399_9662508185163923459-MaleHero_(Icon_Human_Male)" type="22" />
+                    <attribute id="U1" value="0.157227" type="6" />
+                    <attribute id="U2" value="0.311523" type="6" />
+                    <attribute id="V1" value="0.392578" type="6" />
+                    <attribute id="V2" value="0.779297" type="6" />
+                </node>
+            </children>
+        </node>
+    </region>
+    <region id="TextureAtlasInfo">
+        <node id="root">
+            <children>
+                <node id="TextureAtlasIconSize">
+                    <attribute id="Height" value="100" type="4" />
+                    <attribute id="Width" value="80" type="4" />
+                </node>
+                <node id="TextureAtlasPath">
+                    <attribute id="Path" value="Assets/Textures/Icons/Generated_479bb360-b889-4a5d-a3c8-75a36d7ed577_Icons.dds" type="20" />
+                    <attribute id="UUID" value="e172d942-e304-43eb-aef8-d47dc887485d" type="22" />
+                </node>
+                <node id="TextureAtlasTextureSize">
+                    <attribute id="Height" value="256" type="4" />
+                    <attribute id="Width" value="512" type="4" />
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

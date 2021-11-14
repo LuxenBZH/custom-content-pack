@@ -45,3 +45,4 @@ data "Requirements" "!Immobile"
 data "MemorizationRequirements" "WarriorLore 3"
 data "OverrideMinAP" "Yes"
 data "CycleConditions" "Enemy;!Dead"
+

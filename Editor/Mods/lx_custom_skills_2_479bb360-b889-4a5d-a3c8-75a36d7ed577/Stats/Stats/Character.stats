@@ -21,5 +21,173 @@
         <field name="DamageBoost" type="IntegerStatObjectFieldDefinition" value="-25" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_Guardian_Armor" />
+        <field name="Strength" type="EnumerationStatObjectFieldDefinition" value="101" enumeration_type_name="PreciseQualifier" />
+        <field name="Finesse" type="EnumerationStatObjectFieldDefinition" value="51" enumeration_type_name="PreciseQualifier" />
+        <field name="Intelligence" type="EnumerationStatObjectFieldDefinition" value="31" enumeration_type_name="PreciseQualifier" />
+        <field name="Constitution" type="EnumerationStatObjectFieldDefinition" value="101" enumeration_type_name="PreciseQualifier" />
+        <field name="Memory" type="EnumerationStatObjectFieldDefinition" value="41" enumeration_type_name="PreciseQualifier" />
+        <field name="Wits" type="EnumerationStatObjectFieldDefinition" value="31" enumeration_type_name="PreciseQualifier" />
+        <field name="Armor" type="IntegerStatObjectFieldDefinition" value="500" />
+        <field name="MagicArmor" type="IntegerStatObjectFieldDefinition" value="300" />
+        <field name="Vitality" type="IntegerStatObjectFieldDefinition" value="500" />
+        <field name="MagicPoints" type="IntegerStatObjectFieldDefinition" value="9" />
+        <field name="APMaximum" type="IntegerStatObjectFieldDefinition" value="8" />
+        <field name="APStart" type="IntegerStatObjectFieldDefinition" value="6" />
+        <field name="APRecovery" type="IntegerStatObjectFieldDefinition" value="6" />
+        <field name="MPStart" type="IntegerStatObjectFieldDefinition" value="9" />
+        <field name="Movement" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="Sight" type="EnumerationStatObjectFieldDefinition" value="21" enumeration_type_name="Penalty Qualifier" />
+        <field name="Weight" type="IntegerStatObjectFieldDefinition" value="30000" />
+        <field name="StepsType" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="StepsType" />
+        <field name="PiercingResistance" type="IntegerStatObjectFieldDefinition" value="25" />
+        <field name="PhysicalResistance" type="IntegerStatObjectFieldDefinition" value="25" />
+        <field name="FireResistance" type="IntegerStatObjectFieldDefinition" value="10" />
+        <field name="EarthResistance" type="IntegerStatObjectFieldDefinition" value="20" />
+        <field name="PoisonResistance" type="IntegerStatObjectFieldDefinition" value="80" />
+        <field name="TwoHanded" type="IntegerStatObjectFieldDefinition" value="10" />
+        <field name="WarriorLore" type="IntegerStatObjectFieldDefinition" value="5" />
+        <field name="Flags" type="EnumerationListStatObjectFieldDefinition" value="50;35;38;41;59;18;21;14;6;5" enumeration_type_name="AttributeFlags" />
+        <field name="Accuracy" type="IntegerStatObjectFieldDefinition" value="90" />
+        <field name="Talents" type="StringStatObjectFieldDefinition" value="AttackOfOpportunity;LivingArmor" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_Guardian_Armor_Sword" />
+        <field name="Strength" type="EnumerationStatObjectFieldDefinition" value="101" enumeration_type_name="PreciseQualifier" />
+        <field name="Finesse" type="EnumerationStatObjectFieldDefinition" value="81" enumeration_type_name="PreciseQualifier" />
+        <field name="Intelligence" type="EnumerationStatObjectFieldDefinition" value="21" enumeration_type_name="PreciseQualifier" />
+        <field name="Constitution" type="EnumerationStatObjectFieldDefinition" value="31" enumeration_type_name="PreciseQualifier" />
+        <field name="Memory" type="EnumerationStatObjectFieldDefinition" value="41" enumeration_type_name="PreciseQualifier" />
+        <field name="Wits" type="EnumerationStatObjectFieldDefinition" value="71" enumeration_type_name="PreciseQualifier" />
+        <field name="Armor" type="IntegerStatObjectFieldDefinition" value="50" />
+        <field name="MagicArmor" type="IntegerStatObjectFieldDefinition" value="50" />
+        <field name="Vitality" type="IntegerStatObjectFieldDefinition" value="175" />
+        <field name="MagicPoints" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="APMaximum" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="APStart" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="APRecovery" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="MPStart" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Movement" type="IntegerStatObjectFieldDefinition" value="5" />
+        <field name="Sight" type="EnumerationStatObjectFieldDefinition" value="21" enumeration_type_name="Penalty Qualifier" />
+        <field name="Weight" type="IntegerStatObjectFieldDefinition" value="10000" />
+        <field name="PiercingResistance" type="IntegerStatObjectFieldDefinition" value="50" />
+        <field name="PhysicalResistance" type="IntegerStatObjectFieldDefinition" value="50" />
+        <field name="FireResistance" type="IntegerStatObjectFieldDefinition" value="20" />
+        <field name="EarthResistance" type="IntegerStatObjectFieldDefinition" value="100" />
+        <field name="PoisonResistance" type="IntegerStatObjectFieldDefinition" value="100" />
+        <field name="TwoHanded" type="IntegerStatObjectFieldDefinition" value="10" />
+        <field name="WarriorLore" type="IntegerStatObjectFieldDefinition" value="5" />
+        <field name="Flags" type="EnumerationListStatObjectFieldDefinition" value="50;35;38;41;59;18;21;14;6;5;4;7;8;13;19;36;40;46" enumeration_type_name="AttributeFlags" />
+        <field name="AirResistance" type="IntegerStatObjectFieldDefinition" value="-30" />
+        <field name="Dodge" type="IntegerStatObjectFieldDefinition" value="20" />
+        <field name="Accuracy" type="IntegerStatObjectFieldDefinition" value="90" />
+        <field name="Talents" type="StringStatObjectFieldDefinition" value="AttackOfOpportunity;Escapist" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_Guardian_Armor_Torso" />
+        <field name="Strength" type="EnumerationStatObjectFieldDefinition" value="71" enumeration_type_name="PreciseQualifier" />
+        <field name="Finesse" type="EnumerationStatObjectFieldDefinition" value="21" enumeration_type_name="PreciseQualifier" />
+        <field name="Intelligence" type="EnumerationStatObjectFieldDefinition" value="21" enumeration_type_name="PreciseQualifier" />
+        <field name="Constitution" type="EnumerationStatObjectFieldDefinition" value="101" enumeration_type_name="PreciseQualifier" />
+        <field name="Memory" type="EnumerationStatObjectFieldDefinition" value="41" enumeration_type_name="PreciseQualifier" />
+        <field name="Wits" type="EnumerationStatObjectFieldDefinition" value="41" enumeration_type_name="PreciseQualifier" />
+        <field name="Armor" type="IntegerStatObjectFieldDefinition" value="300" />
+        <field name="MagicArmor" type="IntegerStatObjectFieldDefinition" value="150" />
+        <field name="Vitality" type="IntegerStatObjectFieldDefinition" value="300" />
+        <field name="MagicPoints" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="APMaximum" type="IntegerStatObjectFieldDefinition" value="6" />
+        <field name="APStart" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="APRecovery" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="MPStart" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Movement" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="Sight" type="EnumerationStatObjectFieldDefinition" value="21" enumeration_type_name="Penalty Qualifier" />
+        <field name="Weight" type="IntegerStatObjectFieldDefinition" value="10000" />
+        <field name="PiercingResistance" type="IntegerStatObjectFieldDefinition" value="50" />
+        <field name="PhysicalResistance" type="IntegerStatObjectFieldDefinition" value="50" />
+        <field name="FireResistance" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="EarthResistance" type="IntegerStatObjectFieldDefinition" value="50" />
+        <field name="PoisonResistance" type="IntegerStatObjectFieldDefinition" value="50" />
+        <field name="TwoHanded" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="WarriorLore" type="IntegerStatObjectFieldDefinition" value="5" />
+        <field name="Flags" type="EnumerationListStatObjectFieldDefinition" value="50;35;38;41;59;18;21;14;6;5;4;8;13;19;36;40;46;12" enumeration_type_name="AttributeFlags" />
+        <field name="AirResistance" type="IntegerStatObjectFieldDefinition" value="-30" />
+        <field name="Accuracy" type="IntegerStatObjectFieldDefinition" value="90" />
+        <field name="Talents" type="StringStatObjectFieldDefinition" value="LivingArmor;WhatARush;WalkItOff" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_Guardian_Armor_Arms" />
+        <field name="Strength" type="EnumerationStatObjectFieldDefinition" value="61" enumeration_type_name="PreciseQualifier" />
+        <field name="Finesse" type="EnumerationStatObjectFieldDefinition" value="101" enumeration_type_name="PreciseQualifier" />
+        <field name="Intelligence" type="EnumerationStatObjectFieldDefinition" value="31" enumeration_type_name="PreciseQualifier" />
+        <field name="Constitution" type="EnumerationStatObjectFieldDefinition" value="51" enumeration_type_name="PreciseQualifier" />
+        <field name="Memory" type="EnumerationStatObjectFieldDefinition" value="41" enumeration_type_name="PreciseQualifier" />
+        <field name="Wits" type="EnumerationStatObjectFieldDefinition" value="91" enumeration_type_name="PreciseQualifier" />
+        <field name="Armor" type="IntegerStatObjectFieldDefinition" value="175" />
+        <field name="MagicArmor" type="IntegerStatObjectFieldDefinition" value="80" />
+        <field name="Vitality" type="IntegerStatObjectFieldDefinition" value="200" />
+        <field name="MagicPoints" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="APMaximum" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="APStart" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="APRecovery" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="MPStart" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Movement" type="IntegerStatObjectFieldDefinition" value="8" />
+        <field name="Sight" type="EnumerationStatObjectFieldDefinition" value="21" enumeration_type_name="Penalty Qualifier" />
+        <field name="Weight" type="IntegerStatObjectFieldDefinition" value="10000" />
+        <field name="PiercingResistance" type="IntegerStatObjectFieldDefinition" value="50" />
+        <field name="PhysicalResistance" type="IntegerStatObjectFieldDefinition" value="50" />
+        <field name="FireResistance" type="IntegerStatObjectFieldDefinition" value="15" />
+        <field name="EarthResistance" type="IntegerStatObjectFieldDefinition" value="50" />
+        <field name="PoisonResistance" type="IntegerStatObjectFieldDefinition" value="50" />
+        <field name="TwoHanded" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="WarriorLore" type="IntegerStatObjectFieldDefinition" value="5" />
+        <field name="Flags" type="EnumerationListStatObjectFieldDefinition" value="50;35;38;41;18;21;14;6;5;4;8;13;19;36;40;46;22;12" enumeration_type_name="AttributeFlags" />
+        <field name="AirResistance" type="IntegerStatObjectFieldDefinition" value="-30" />
+        <field name="Dodge" type="IntegerStatObjectFieldDefinition" value="20" />
+        <field name="Accuracy" type="IntegerStatObjectFieldDefinition" value="90" />
+        <field name="Talents" type="StringStatObjectFieldDefinition" value="AttackOfOpportunity;LivingArmor;Haymaker;Escapist;DualWieldingDodging" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_Guardian_Armor_Feet" />
+        <field name="Strength" type="EnumerationStatObjectFieldDefinition" value="86" enumeration_type_name="PreciseQualifier" />
+        <field name="Finesse" type="EnumerationStatObjectFieldDefinition" value="61" enumeration_type_name="PreciseQualifier" />
+        <field name="Intelligence" type="EnumerationStatObjectFieldDefinition" value="21" enumeration_type_name="PreciseQualifier" />
+        <field name="Constitution" type="EnumerationStatObjectFieldDefinition" value="51" enumeration_type_name="PreciseQualifier" />
+        <field name="Memory" type="EnumerationStatObjectFieldDefinition" value="41" enumeration_type_name="PreciseQualifier" />
+        <field name="Wits" type="EnumerationStatObjectFieldDefinition" value="61" enumeration_type_name="PreciseQualifier" />
+        <field name="Armor" type="IntegerStatObjectFieldDefinition" value="225" />
+        <field name="MagicArmor" type="IntegerStatObjectFieldDefinition" value="125" />
+        <field name="Vitality" type="IntegerStatObjectFieldDefinition" value="250" />
+        <field name="MagicPoints" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="APMaximum" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="APStart" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="APRecovery" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="MPStart" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Movement" type="IntegerStatObjectFieldDefinition" value="6" />
+        <field name="Sight" type="EnumerationStatObjectFieldDefinition" value="21" enumeration_type_name="Penalty Qualifier" />
+        <field name="Weight" type="IntegerStatObjectFieldDefinition" value="10000" />
+        <field name="PiercingResistance" type="IntegerStatObjectFieldDefinition" value="50" />
+        <field name="PhysicalResistance" type="IntegerStatObjectFieldDefinition" value="50" />
+        <field name="FireResistance" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="EarthResistance" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="PoisonResistance" type="IntegerStatObjectFieldDefinition" value="25" />
+        <field name="TwoHanded" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="WarriorLore" type="IntegerStatObjectFieldDefinition" value="5" />
+        <field name="Flags" type="EnumerationListStatObjectFieldDefinition" value="50;35;38;41;59;18;21;14;6;5;4;8;19;36;40;12" enumeration_type_name="AttributeFlags" />
+        <field name="AirResistance" type="IntegerStatObjectFieldDefinition" value="30" />
+        <field name="Dodge" type="IntegerStatObjectFieldDefinition" value="10" />
+        <field name="Accuracy" type="IntegerStatObjectFieldDefinition" value="90" />
+        <field name="Talents" type="StringStatObjectFieldDefinition" value="AttackOfOpportunity;LivingArmor;QuickStep" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

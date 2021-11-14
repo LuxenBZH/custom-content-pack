@@ -1,0 +1,14 @@
+new equipment "LX_GuardianArmor"
+add equipmentgroup
+add equipment entry "LX_WPN_GuardianArmor_Sword"
+
+new equipment "LX_GuardianArmor_Arms"
+add equipmentgroup
+add equipment entry "LX_WPN_GuardianArmor_DualWield"
+
+new equipment "LX_GuardianArmor_Feet"
+
+new equipment "LX_GuardianArmor_Sword"
+add equipmentgroup
+add equipment entry "LX_WPN_GuardianArmor_Sword_B"
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="cc1701fc-f374-4681-a3ec-29a5ce8d05e8">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_GuardianArmor" />
+        <field name="1" type="StatReferenceStatObjectFieldDefinition" stat_name="LX_WPN_GuardianArmor_Sword" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_GuardianArmor_Arms" />
+        <field name="1" type="StatReferenceStatObjectFieldDefinition" stat_name="LX_WPN_GuardianArmor_DualWield" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_GuardianArmor_Feet" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="LX_GuardianArmor_Sword" />
+        <field name="1" type="StatReferenceStatObjectFieldDefinition" stat_name="LX_WPN_GuardianArmor_Sword_B" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

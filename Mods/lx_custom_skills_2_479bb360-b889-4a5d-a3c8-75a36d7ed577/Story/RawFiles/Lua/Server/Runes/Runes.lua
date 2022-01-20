@@ -1,4 +1,4 @@
-Ext.Require("Runes/RunesHelpers.lua")
+Ext.Require("Server/Runes/RunesHelpers.lua")
 
 local customRunes = {
     ["f683ef30-97a1-48df-af3a-af13130bfa3b"] = true,

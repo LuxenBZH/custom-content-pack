@@ -8,6 +8,13 @@ Ext.RegisterListener("StatusHitEnter", function(status, context)
     if not pass then return end
     if instigator == nil then return end
     local multiplier = 1.0
+    local dodged = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Dodged")
+    local missed = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Missed")
+    local critical = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "CriticalHit")
+    local backstab = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Backstab")
+    local sourceType = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "DamageSourceType")
+    local blocked = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Blocked")
+    
     -- Ext.Print("FirstBlood:",firstBlood,firstBloodWeakened, status.DamageSourceType)
     if (status.DamageSourceType == "Attack" or status.SkillId ~= "") then
         if HasActiveStatus(instigator.MyGuid, "LX_HUNTHUNTED") == 1 then
@@ -28,6 +35,5 @@ Ext.RegisterListener("StatusHitEnter", function(status, context)
         -- GameHelpers.ExplodeProjectile(instigator, target, "Projectile_LX_Shove_4")
         Ext.ExecuteSkillPropertiesOnTarget("Projectile_LX_Shove_6", instigator.NetID, target.NetID, instigator.WorldPos, "Target", false)
     end
-    -- context.Hit.DamageList:Multiply(multiplier)
-    -- ReplaceDamages(dmgList, status.StatusHandle, target.MyGuid)
+    SpecialEffects.OceansTrident(status.WeaponHandle, instigator, status, target, dodged, missed)
 end)

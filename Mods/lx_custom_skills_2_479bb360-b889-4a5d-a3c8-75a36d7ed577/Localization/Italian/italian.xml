@@ -1,6 +1,33 @@
 <contentList>
 	<content contentuid="h09ef5cb2gb240g4df9gbc50g114737309b29">Brew of Fortune</content>
 	<content contentuid="h17d5935bg0cb9g4933gad68gc7648a9af915">Elixir of the Eagle</content>
+	<content contentuid="h254bf03fgd52eg4388gb1c6gc306830fc0dd">Condense all cloud surfaces in the area. Deal [1] and inflict Deaf and Bleeding for 2 turns.</content>
+	<content contentuid="h28de08c3gdc6dg43fagaaeegcf624d24873c">Increase Constitution by [1] and Water Resistance by [2] for all allied characters in the radius.</content>
+	<content contentuid="h29c8adbbg7d90g40adg923bg440df554e3bd">High-kick the target to push it 8m away, dealing [1] and set Knocked Down.</content>
+	<content contentuid="h36145342gc480g4338gb1e1g584561678318">Strike the target with your head, dealing [1] damage and set Knocked Down.</content>
+	<content contentuid="h37cd1ed2g2287g4a0ag9c64g8b00e220a053">Mawashi-Geri</content>
+	<content contentuid="h40d3c621gc1f9g4a35gb5c6g0aaa4bfbb0b5">Metal pieces start to heat, increasing Fire resistance by [1], reducing Water resistance by [2], Physical and Piercing resistances by [3] and reflect 50% of the melee damage as Fire damage. Also grants immunity to Burning, set Burning on contact and give weapon-based attack a Fire damage bonus.</content>
+	<content contentuid="h43a153c0g3980g493bgb154gb08bb4e6ccf8">False Life</content>
+	<content contentuid="h4792ebf7g112bg422bg882bg447cf0d47527">Attacking a character with Bleeding will recover 1 AP. Can happen only once per turn.</content>
+	<content contentuid="h51c84509g24beg400cgb5a7g5669a7d922a3">Headbutt</content>
+	<content contentuid="h54f30998g5b30g4196g84d3g09849c570e25">Throw a piece of brain to the target, dealing [1] and set Diseased for 2 turns.</content>
+	<content contentuid="h633fd353g53fag4f06gac9egabbee02f2d2d">Overpressure</content>
 	<content contentuid="h6540c191gbde8g4a51g8aedga43431b227ea">Potion of Vampirism</content>
+	<content contentuid="h67709ba8g9102g45e1gb90egef09de266f1d">Bashing Charge</content>
+	<content contentuid="h69ce9920g87ceg4e3cg98a1gcdef4b0b0c37">Hit the target 5 times, dealing [1] each hit.</content>
+	<content contentuid="h7e40d67eg01c8g499agaa44g287050137bbc">Piece of Mind</content>
+	<content contentuid="h82e08213g1587g4cc0gb493g1c322273ee40">False Life</content>
+	<content contentuid="h8a83229cg89cag4990gacf5gb9636f4ecaae">Blood Lust</content>
+	<content contentuid="h926cf6bbgef30g43bdg94a9g1aa39b414140">Brawl</content>
+	<content contentuid="h964e50d6g278eg474cga6f2g12aea8fea239">False Life</content>
+	<content contentuid="h9d60a11bg61fbg46adg9e94g5dad7cbc81f7">Heat Metal</content>
+	<content contentuid="ha0b9113ag6daag4cadg87b1g6162083db9c8">Rush with your shield, dealing [1], pushing the enemies on the path and set Slowed for 1 turn.</content>
+	<content contentuid="hbb6ba490g7b10g4181g8fc5g80312e0aa076">Split the guardian armour into 4 parts : Torso, Arms, Feet and Sword</content>
+	<content contentuid="hc959a634ga7c6g4977ga2e1gaea916f775b4">Ground Swell</content>
+	<content contentuid="hdb9cf4b6gc7f2g4389gae15gecbfdd9ac83c">Metal pieces start to heat, increasing Fire resistance by [1], reducing Water resistance by [2], Physical and Piercing resistances by [3] and reflect 50% of the melee damage as Fire damage. Also grants immunity to Burning, set Burning on contact and give weapon-based attack a Fire damage bonus.</content>
+	<content contentuid="hea264704g374fg429cg82ddg7e998da2c159">Constitution and Water Resistance increased.</content>
+	<content contentuid="hefa5fdfegc633g4273g9f6ega8e2a798f80e">Heat Metal Aura</content>
 	<content contentuid="hf746a771g6ba2g40bfgad4bg6d129c5fbdc1">Elixir of the Runner</content>
+	<content contentuid="hfaa6c576gc444g43afg9048gbb3d105551a7">Split Armor</content>
+	<content contentuid="hff8cc292g6c41g4a6dgb501gec98b8273862">Water swipes treatrously the targets feet, dealing [1] and set Knocked Down for 1 turn. Can only target Wet character or on water surfaces.</content>
 </contentList>

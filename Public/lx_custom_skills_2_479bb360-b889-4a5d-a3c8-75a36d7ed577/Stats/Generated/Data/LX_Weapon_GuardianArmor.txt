@@ -1,0 +1,7 @@
+new entry "LX_Status_HeatMetal"
+type "Weapon"
+data "ModifierType" "Item"
+data "Damage Type" "Fire"
+data "Damage" "1"
+data "Damage Range" "5"
+data "DamageFromBase" "55"

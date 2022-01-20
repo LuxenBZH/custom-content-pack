@@ -1,0 +1,8 @@
+new entry "LX_SE_OCEANFIGHTER"
+type "StatusData"
+data "StatusType" "CONSUME"
+data "DisplayName" "LX_SE_OCEANFIGHTER_DisplayName"
+data "DisplayNameRef" ""
+data "Description" "LX_SE_OCEANFIGHTER_Description"
+data "DescriptionRef" ""
+data "StackId" "Stack_LX_OceanFighter"

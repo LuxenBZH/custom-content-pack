@@ -52,6 +52,7 @@
         <field name="Flags" type="EnumerationListStatObjectFieldDefinition" value="50;35;38;41;59;18;21;14;6;5" enumeration_type_name="AttributeFlags" />
         <field name="Accuracy" type="IntegerStatObjectFieldDefinition" value="90" />
         <field name="Talents" type="StringStatObjectFieldDefinition" value="AttackOfOpportunity;LivingArmor" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Base" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -86,6 +87,7 @@
         <field name="Dodge" type="IntegerStatObjectFieldDefinition" value="20" />
         <field name="Accuracy" type="IntegerStatObjectFieldDefinition" value="90" />
         <field name="Talents" type="StringStatObjectFieldDefinition" value="AttackOfOpportunity;Escapist" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Base" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -119,6 +121,7 @@
         <field name="AirResistance" type="IntegerStatObjectFieldDefinition" value="-30" />
         <field name="Accuracy" type="IntegerStatObjectFieldDefinition" value="90" />
         <field name="Talents" type="StringStatObjectFieldDefinition" value="LivingArmor;WhatARush;WalkItOff" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Base" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -153,6 +156,7 @@
         <field name="Dodge" type="IntegerStatObjectFieldDefinition" value="20" />
         <field name="Accuracy" type="IntegerStatObjectFieldDefinition" value="90" />
         <field name="Talents" type="StringStatObjectFieldDefinition" value="AttackOfOpportunity;LivingArmor;Haymaker;Escapist;DualWieldingDodging" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Base" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -187,6 +191,7 @@
         <field name="Dodge" type="IntegerStatObjectFieldDefinition" value="10" />
         <field name="Accuracy" type="IntegerStatObjectFieldDefinition" value="90" />
         <field name="Talents" type="StringStatObjectFieldDefinition" value="AttackOfOpportunity;LivingArmor;QuickStep" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Base" />
       </fields>
     </stat_object>
   </stat_objects>

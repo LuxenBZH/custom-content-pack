@@ -1,0 +1,5 @@
+new entry "Stats_LX_FalseLife"
+type "Potion"
+data "Constitution" "7"
+// data "VitalityBoost" "25"
+data "WaterResistance" "15"

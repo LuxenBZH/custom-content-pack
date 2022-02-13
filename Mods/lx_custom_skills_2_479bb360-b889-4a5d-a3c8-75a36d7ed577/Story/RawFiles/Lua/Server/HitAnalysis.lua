@@ -1,3 +1,30 @@
+HitHooks = {
+    StatusHitEnter = {
+        OnMelee = {},
+        OnRanged = {},
+        OnWeaponHit = {},
+        OnHit = {},
+    },
+    ComputeCharacterHit = {},
+}
+
+--- @param hook string StatusHitEnter | ComputeCharacterHit
+--- @param event string OnMelee | OnRanged | OnWeaponHit| OnHit
+--- @param func function callback
+function RegisterHitConditionListener(hook, event, func)
+    table.insert(HitHook[hook][event], {
+        Name = "",
+        Handle = func
+    })
+end
+
+function TriggerHooks(hook, event, ...)
+    local params = {...}
+    for i,j in pairs(HitHooks[hook][event]) do
+        j.Handle(table.unpack(params))
+    end
+end
+
 
 ---@param status EsvStatusHit
 ---@param context HitContext
@@ -8,12 +35,14 @@ Ext.RegisterListener("StatusHitEnter", function(status, context)
     if not pass then return end
     if instigator == nil then return end
     local multiplier = 1.0
-    local dodged = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Dodged")
-    local missed = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Missed")
-    local critical = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "CriticalHit")
-    local backstab = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Backstab")
-    local sourceType = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "DamageSourceType")
-    local blocked = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Blocked")
+    local flags = {
+        Dodged = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Dodged"),
+        Missed = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Missed"),
+        Critical = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "CriticalHit"),
+        Backstab = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Backstab"),
+        DamageSourceType = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "DamageSourceType"),
+        Blocked = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Blocked")
+    }
     
     -- Ext.Print("FirstBlood:",firstBlood,firstBloodWeakened, status.DamageSourceType)
     if (status.DamageSourceType == "Attack" or status.SkillId ~= "") then
@@ -29,11 +58,6 @@ Ext.RegisterListener("StatusHitEnter", function(status, context)
             CharacterAddActionPoints(instigator.MyGuid, 1)
         end
     end
-    local skill = string.gsub(status.SkillId, "%_%-1", "")
-    if skill == "Rush_LX_BashingCharge" then
-        -- GameHelpers.ShootProjectile(instigator, target, "Projectile_LX_Shove_4", true, nil, nil, false)
-        -- GameHelpers.ExplodeProjectile(instigator, target, "Projectile_LX_Shove_4")
-        Ext.ExecuteSkillPropertiesOnTarget("Projectile_LX_Shove_6", instigator.NetID, target.NetID, instigator.WorldPos, "Target", false)
-    end
+    TriggerHooks("StatusHitEnter", "OnHit", status, instigator, target, flags)
     SpecialEffects.OceansTrident(status.WeaponHandle, instigator, status, target, dodged, missed)
 end)

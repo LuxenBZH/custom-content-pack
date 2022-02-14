@@ -17,11 +17,14 @@ end)
 Ext.RegisterOsirisListener("ObjectTurnStarted", 1, "before", function(character)
     local char = Ext.GetCharacter(character)
     if char:GetStatus("LX_THERMALDUALITY") and char:GetStatus("LX_THERMALDUALITY_AURA") then
+        Ext.Print("THERMAL DUALITY")
         if char.Stats.FireSpecialist > char.Stats.WaterSpecialist then
-            GameHelpers.ExplodeProjectile(char, char, "Projectile_LX_ThermalDuality_FirePulse", char.Stats.Level, false)
+            Ext.Print("THERMAL DUALITY FIRE")
+            GameHelpers.ExplodeProjectile(character, character, "Projectile_LX_ThermalDuality_FirePulse", char.Stats.Level, false)
         else
-            GameHelpers.ExplodeProjectile(char, char, "Projectile_LX_ThermalDuality_WaterPulseEnemy", char.Stats.Level, false)
-            GameHelpers.ExplodeProjectile(char, char, "Projectile_LX_ThermalDuality_WaterPulseAlly", char.Stats.Level, false)
+            Ext.Print("THERMAL DUALITY ICE")
+            GameHelpers.ExplodeProjectile(character, character, "Projectile_LX_ThermalDuality_WaterPulseEnemy", char.Stats.Level, false)
+            GameHelpers.ExplodeProjectile(character, character, "Projectile_LX_ThermalDuality_WaterPulseAlly", char.Stats.Level, false)
         end
     end
 end)

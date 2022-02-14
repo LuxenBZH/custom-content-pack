@@ -12,7 +12,7 @@ HitHooks = {
 --- @param event string OnMelee | OnRanged | OnWeaponHit| OnHit
 --- @param func function callback
 function RegisterHitConditionListener(hook, event, func)
-    table.insert(HitHook[hook][event], {
+    table.insert(HitHooks[hook][event], {
         Name = "",
         Handle = func
     })
@@ -59,5 +59,5 @@ Ext.RegisterListener("StatusHitEnter", function(status, context)
         end
     end
     TriggerHooks("StatusHitEnter", "OnHit", status, instigator, target, flags)
-    SpecialEffects.OceansTrident(status.WeaponHandle, instigator, status, target, dodged, missed)
+    -- SpecialEffects.OceansTrident(status.WeaponHandle, instigator, status, target, dodged, missed)
 end)

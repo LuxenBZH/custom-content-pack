@@ -1,3 +1,4 @@
+--- @class HitHooks
 HitHooks = {
     StatusHitEnter = {
         OnMelee = {},
@@ -41,7 +42,9 @@ Ext.RegisterListener("StatusHitEnter", function(status, context)
         Critical = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "CriticalHit"),
         Backstab = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Backstab"),
         DamageSourceType = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "DamageSourceType"),
-        Blocked = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Blocked")
+        Blocked = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Blocked"),
+        IsDirectAttack = status.DamageSourceType == "Attack" or status.SkillId ~= "",
+        IsWeaponAttack = status.Hit.HitWithWeapon
     }
     
     -- Ext.Print("FirstBlood:",firstBlood,firstBloodWeakened, status.DamageSourceType)

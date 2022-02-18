@@ -47,13 +47,13 @@ Ext.RegisterOsirisListener("CharacterUsedSkill", 4, "after", function(character,
 end)
 
 ---- Rune of First Blood
-Ext.RegisterOsirisListener("ObjectTurnStarted", 1, "after", function(object)
+RegisterTurnTrueStartListener(function(object)
     if ObjectIsCharacter(object) == 1 and LookRunesForTag(object, "LX_RUNE_FIRSTBLOOD") then
         ApplyStatus(object, "LX_FIRSTBLOOD", 3.0, 1.0)
     end
 end)
 
-Ext.RegisterOsirisListener("ObjectTurnEnded", 1, "after", function(object)
+RegisterTurnTrueEndListener(function(object)
     if ObjectIsCharacter(object) == 1 and LookRunesForTag(object, "LX_RUNE_FIRSTBLOOD") then
         RemoveStatus(object, "LX_FIRSTBLOOD")
         RemoveStatus(object, "LX_FIRSTBLOOD_WEAKENED")
@@ -75,7 +75,7 @@ local stoicismList = {
     "VAMPIRISM"
 }
 
-Ext.RegisterOsirisListener("ObjectTurnEnded", 1, "after", function(object)
+RegisterTurnTrueEndListener(function(object)
     if ObjectIsCharacter(object) == 1 and Ext.GetCharacter(object).Stats.TALENT_WalkItOff and LookRunesForTag(object, "LX_RUNE_STOICISM") then
         local roll = math.random(1, #stoicismList)
         if HasActiveStatus(object, stoicismList[roll]) == 0 or GetStatusTurn(object, stoicismList[roll]) < 2 then

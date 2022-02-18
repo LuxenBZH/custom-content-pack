@@ -1,0 +1,26 @@
+INIT
+
+	CHARACTER:__Me
+	EXTERN FIXEDSTRING:%Material="d51883d5-4118-4adb-83f7-59597d83a527"
+	EXTERN INT:%OnInit=1
+	EXTERN INT:%RemoveOnDeath=0
+
+
+EVENTS
+
+EVENT MaterialInit
+ON
+	OnInit()
+ACTIONS
+	IF "c1&!c2"
+		IsEqual(%OnInit,1)
+		CharacterIsDead(__Me)
+	THEN
+		SetMaterial(__Me,%Material,-1,1,1,1,1,1,1,1)
+	ENDIF
+	
+EVENT SetMaterialEvent
+ON	
+	OnCharacterEvent(__Me,"SetMaterialEvent")
+ACTIONS
+	SetMaterial(__Me,%Material,-1,1,1,1,1,1,1,1)

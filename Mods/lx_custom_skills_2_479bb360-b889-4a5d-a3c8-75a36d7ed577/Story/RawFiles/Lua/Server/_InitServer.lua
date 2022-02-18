@@ -1,5 +1,6 @@
 SpecialEffects = {}
 
+Ext.Require("Server/MechanicsHelpers.lua")
 Ext.Require("Server/HitAnalysis.lua")
 Ext.Require("Server/SpecialEffects/Weapons.lua")
 

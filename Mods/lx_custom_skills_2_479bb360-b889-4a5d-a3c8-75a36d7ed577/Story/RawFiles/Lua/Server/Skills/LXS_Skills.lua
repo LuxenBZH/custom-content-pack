@@ -12,19 +12,33 @@ RegisterHitConditionListener("StatusHitEnter", "OnHit", function(statusHit, inst
     if skill == "Rush_LX_BashingCharge" then
         Ext.ExecuteSkillPropertiesOnTarget("Projectile_LX_Shove_6", instigator.NetID, target.NetID, instigator.WorldPos, "Target", false)
     end
+    if flags.IsWeaponAttack then
+        if instigator:GetStatus("LX_SE_BARBEDSWORD") then
+            if math.random(1,100) <= 35 and not instigator:GetStatus("BLEEDING") then
+                ApplyStatus(instigator.MyGuid, "BLEEDING", 6.0, 0, instigator.MyGuid)
+            end
+        end
+    end
 end)
 
-Ext.RegisterOsirisListener("ObjectTurnStarted", 1, "before", function(character)
+RegisterTurnTrueStartListener(function(character)
     local char = Ext.GetCharacter(character)
     if char:GetStatus("LX_THERMALDUALITY") and char:GetStatus("LX_THERMALDUALITY_AURA") then
-        Ext.Print("THERMAL DUALITY")
         if char.Stats.FireSpecialist > char.Stats.WaterSpecialist then
-            Ext.Print("THERMAL DUALITY FIRE")
             GameHelpers.ExplodeProjectile(character, character, "Projectile_LX_ThermalDuality_FirePulse", char.Stats.Level, false)
         else
-            Ext.Print("THERMAL DUALITY ICE")
             GameHelpers.ExplodeProjectile(character, character, "Projectile_LX_ThermalDuality_WaterPulseEnemy", char.Stats.Level, false)
             GameHelpers.ExplodeProjectile(character, character, "Projectile_LX_ThermalDuality_WaterPulseAlly", char.Stats.Level, false)
         end
+    end
+end)
+
+Ext.RegisterOsirisListener("CharacterUsedSkill", 4, "before", function(char, skill, type, element)
+    if skill == "Summon_LX_SpiritDeer" then
+        GameHelpers.Skill.Swap(char, "Summon_LX_SpiritDeer", "Summon_LX_SpiritCoyote", true, false)
+        GameHelpers.Skill.SetCooldown(char, "Summon_LX_SpiritCoyote", NRD_SkillGetCooldown(char, "Summon_LX_SpiritDeer"))
+    elseif skill == "Summon_LX_SpiritCoyote" then
+        GameHelpers.Skill.Swap(char, "Summon_LX_SpiritCoyote", "Summon_LX_SpiritDeer", true, false)
+        GameHelpers.Skill.SetCooldown(char, "Summon_LX_SpiritDeer", NRD_SkillGetCooldown(char, "Summon_LX_SpiritCoyote"))
     end
 end)

@@ -33,10 +33,18 @@ end
 
 Ext.RegisterOsirisListener("NRD_OnPrepareHit", 4, "after", Sinfusion_IncreaseDamage)
 
---- @param status EsvStatusHit
---- @param instigator EsvCharacter
---- @param target EsvCharacter
---- @param flags Boolean[]
+Ext.RegisterOsirisListener("NRD_OnStatusAttempt", 4, "before", function(character, status, handle, causee)
+    if HasActiveStatus(character, "LX_DUMMY_NOSHOCKWAVE") == 1 and status == "SHOCKWAVE" then
+        NRD_StatusPreventApply(character, handle, 1)
+        RemoveStatus(character, "LX_DUMMY_NOSHOCKWAVE")
+        -- ChainAnimations(character, "knockdown_fall", "knockdown_getup")
+        -- PlayAnimation(character, "knockdown_fall")
+        -- CharacterSetAnimationOverride(character, "knockdown_fall")
+        -- CharacterSetAnimationOverride(character, "knockdown_getup")
+        -- CharacterSetAnimationOverride(character, "still")
+    end
+end)
+
 RegisterHitConditionListener("StatusHitEnter", "OnHit", function(statusHit, instigator, target, flags)
     if target:GetStatus("LX_SE_SPIRITUALDEFENSE") and flags.IsDirectAttack then
         if math.roll(1, 100) <= 20 then
@@ -44,7 +52,7 @@ RegisterHitConditionListener("StatusHitEnter", "OnHit", function(statusHit, inst
             GameHelpers.Skill.SetCooldown(target, "Summon_LX_SpiritCoyote", math.max(NRD_SkillGetCooldown(target, "Summon_LX_SpiritCoyote") - 6.0))
         end
     end
-end)
+end, "OnHit", "StatusHitEnter")
 
 Ext.RegisterOsirisListener("CharacterStatusApplied", 3, "before", function(char, status, source)
     if status == "LX_SE_TWINSCONFIDENCE" and HasActiveStatus(char, "LX_SE_TWINSCONFIDENCE_AURA") == 1  or
@@ -54,6 +62,9 @@ Ext.RegisterOsirisListener("CharacterStatusApplied", 3, "before", function(char,
     if status == "LX_TAMEDBEAST" and HasActiveStatus(char, "LX_TAMEDBEAST_UNIT") == 1 then
         RemoveStatus(char, "ENRAGED")
     end
+    if status == "LX_SHAPESHIELD" then
+        ApplyStatus(char, "LX_SHAPESHIELD_PHYSICAL", -1, 1, char)
+    end
 end)
 
 Ext.RegisterOsirisListener("CharacterStatusRemoved", 3, "before", function(char, status, source)
@@ -62,6 +73,10 @@ Ext.RegisterOsirisListener("CharacterStatusRemoved", 3, "before", function(char,
     end
     if status == "LX_TAMEDBEAST" and HasActiveStatus(char, "LX_TAMEDBEAST_UNIT") == 1 and CharacterIsInCombat(char) == 1 then
         ApplyStatus(char, "ENRAGED", -1, 1, char)
+    end
+    if status == "LX_SHAPESHIELD" then
+        RemoveStatus(char, "LX_SHAPESHIELD_PHYSICAL")
+        RemoveStatus(char, "LX_SHAPESHIELD_MAGICAL")
     end
 end)
 
@@ -96,5 +111,21 @@ RegisterTurnTrueEndListener(function(char)
             new.StatusSourceHandle = source.Handle
             Ext.ApplyStatus(new)
         end
+    end
+end)
+
+RegisterHitConditionListener("StatusHitEnter", "OnMelee", function(status, instigator, target, flags)
+    Ext.Print(flags.Critical, flags.Dodged, flags.Missed)
+    if (flags.Critical or flags.Dodged or flags.Missed) and not target:HasTag("LX_SE_DuelistBucklerUsed") and target:GetStatus("LX_SE_DUELISTBUCKLER") then
+        ApplyStatus(instigator.MyGuid, "LX_DUMMY_NOSHOCKWAVE", 6.0, 1)
+        CharacterUseSkill(target.MyGuid, "Target_LX_DuelistBucklerBash", instigator.MyGuid, 1, 1, 0)
+        ApplyStatus(target.MyGuid, "UNSHEATHED", -1, 1)
+        SetTag(target.MyGuid, "LX_SE_DuelistBucklerUsed")
+    end
+end)
+
+RegisterTurnTrueStartListener(function(character)
+    if IsTagged(character, "LX_SE_DuelistBucklerUsed") == 1 then
+        ClearTag(character, "LX_SE_DuelistBucklerUsed")
     end
 end)

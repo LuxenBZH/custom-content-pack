@@ -1,0 +1,5 @@
+new entry "LX_DUMMY_NOSHOCKWAVE"
+type "StatusData"
+data "StatusType" "CONSUME"
+data "ForGameMaster" "No"
+data "StackId" "Stack_LX_NoShockwave"

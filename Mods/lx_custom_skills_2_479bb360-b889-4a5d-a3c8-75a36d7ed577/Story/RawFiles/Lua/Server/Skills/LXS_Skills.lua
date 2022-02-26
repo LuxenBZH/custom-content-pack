@@ -35,10 +35,18 @@ end)
 
 Ext.RegisterOsirisListener("CharacterUsedSkill", 4, "before", function(char, skill, type, element)
     if skill == "Summon_LX_SpiritDeer" then
+        local cooldown = NRD_SkillGetCooldown(char, "Summon_LX_SpiritDeer")
         GameHelpers.Skill.Swap(char, "Summon_LX_SpiritDeer", "Summon_LX_SpiritCoyote", true, false)
-        GameHelpers.Skill.SetCooldown(char, "Summon_LX_SpiritCoyote", NRD_SkillGetCooldown(char, "Summon_LX_SpiritDeer"))
+        GameHelpers.Skill.SetCooldown(char, "Summon_LX_SpiritCoyote", cooldown)
     elseif skill == "Summon_LX_SpiritCoyote" then
+        local cooldown = NRD_SkillGetCooldown(char, "Summon_LX_SpiritCoyote")
         GameHelpers.Skill.Swap(char, "Summon_LX_SpiritCoyote", "Summon_LX_SpiritDeer", true, false)
-        GameHelpers.Skill.SetCooldown(char, "Summon_LX_SpiritDeer", NRD_SkillGetCooldown(char, "Summon_LX_SpiritCoyote"))
+        GameHelpers.Skill.SetCooldown(char, "Summon_LX_SpiritDeer", cooldown)
+    elseif skill == "Shout_LX_SwitchShieldArmor" then
+        if HasActiveStatus(char, "LX_SHAPESHIELD_PHYSICAL") == 1 then
+            ApplyStatus(char, "LX_SHAPESHIELD_MAGICAL", -1, 1, char)
+        else
+            ApplyStatus(char, "LX_SHAPESHIELD_PHYSICAL", -1, 1, char)
+        end
     end
 end)

@@ -47,10 +47,12 @@ end)
 
 RegisterHitConditionListener("StatusHitEnter", "OnHit", function(statusHit, instigator, target, flags)
     if target:GetStatus("LX_SE_SPIRITUALDEFENSE") and flags.IsDirectAttack then
-        if math.roll(1, 100) <= 20 then
+        if math.random(1, 100) <= 20 then
             GameHelpers.Skill.SetCooldown(target, "Summon_LX_SpiritDeer", math.max(NRD_SkillGetCooldown(target, "Summon_LX_SpiritDeer") - 6.0))
             GameHelpers.Skill.SetCooldown(target, "Summon_LX_SpiritCoyote", math.max(NRD_SkillGetCooldown(target, "Summon_LX_SpiritCoyote") - 6.0))
         end
+    elseif instigator:GetStatus("LX_BELLYDRUM") and flags.IsDirectAttack then
+        RemoveStatus(instigator.MyGuid, "LX_BELLYDRUM")
     end
 end, "OnHit", "StatusHitEnter")
 
@@ -127,5 +129,15 @@ end)
 RegisterTurnTrueStartListener(function(character)
     if IsTagged(character, "LX_SE_DuelistBucklerUsed") == 1 then
         ClearTag(character, "LX_SE_DuelistBucklerUsed")
+    end
+end)
+
+--- @param target EsvItem|EsvCharacter
+RegisterHitConditionListener("StatusHitEnter", "OnHit", function(status, instigator, target, flags)
+    if target:GetStatus("LX_STURDINESS_LOW") then
+        local threshold = Game.Math.GetAverageLevelDamage((target.LevelOverride or target.Stats.Level))*3
+        if status.Hit.TotalDamageDone < threshold then
+            status.Hit.DamageList:Clear()
+        end
     end
 end)

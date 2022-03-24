@@ -3,14 +3,17 @@
 	<content contentuid="h0a19d2b1g36e5g4b3egb3f2g8a34854e434d">Assume your demon form, granting you additional skills.</content>
 	<content contentuid="h13e3fde3g7f07g452fga59dgef6d50aaed42">When receiving a direct attack, Spiritual Summons have 10% chance to see their cooldown reduced by 1 turn.</content>
 	<content contentuid="h154901e4gce87g430dg80e6g66c23b0c6e6f">Start channeling power of extreme temperatures. If another character is also channeling this spell in a 8m radius, then if their Pyrokinetic is higher than their Hydrosophist, they will cast a fire nova dealing [1] and pushing characters 2m aways. If Hydrosophist is the highest, they will cast a frost nova dealing [2], set Chilled for 2 turns and heal surrounding allies. Drain 2 AP per turn, for 2 turns.</content>
+	<content contentuid="h169bbf72g1db4g4eaeg945fg395e23e680c9">Duelist Buckler : dodging a melee attack or receiving a melee critical hit will trigger a bashing counter-attack, dealing Physical damage and push the attacker 2m away, if possible. Can happen once per turn</content>
 	<content contentuid="h17d5935bg0cb9g4933gad68gc7648a9af915">Elixir of the Eagle</content>
 	<content contentuid="h1a4efd84g0c8fg4f4bg8398g800e96700dd5">Ready to channel Thermal Duality. If another character stand in the radius with the same aura activated, they will trigger Thermal Duality at the beginning of their turn.</content>
 	<content contentuid="h1abd2bd5g83c0g4d35gb0bdg06ddf7f404ff">Throw a shield at an enemy, and bounce up to 4 times, dealing [1] and recover physical and magic armour each hit. Can hit allies.</content>
 	<content contentuid="h1d51f672ge393g410cgbc7dg9a7043535ba6">Summon a supportive deer with healing skills. After summoning it, the next spiritual animal to be summoned will be the coyote.</content>
+	<content contentuid="h1ddbc544gc21fg438fg82d9g4a972462b307">Make 5 rocks of oils crashing from above, dealing [1] damage and leave oil on the ground.</content>
 	<content contentuid="h1e02210bgc8b8g475cg8100gb5ac48b04430">Spiritual Defense : When receiving a direct attack, Spiritual Summons have 20% chance to see their cooldown reduced by 1 turn.</content>
 	<content contentuid="h1e0838adg813cg4d21gaa1bg1b2d4b700d60">All enemies will see their Fire Resistance reduced at the end of their turn if they stand in a fire surface.</content>
 	<content contentuid="h20bb3ba3g88f0g4965g8196g51d5a8f20a60">Thermal Duality</content>
 	<content contentuid="h254bf03fgd52eg4388gb1c6gc306830fc0dd">Condense all cloud surfaces in the area. Deal [1] and inflict Deaf and Bleeding for 2 turns.</content>
+	<content contentuid="h27b0f46dg9266g4f05g8083g9bd44f04f1e8">The next attack will receive a massive damage boost, but the character can&apos;t move.</content>
 	<content contentuid="h28de08c3gdc6dg43fagaaeegcf624d24873c">Increase Constitution by [1] and Water Resistance by [2] for all allied characters in the radius.</content>
 	<content contentuid="h29c8adbbg7d90g40adg923bg440df554e3bd">High-kick the target to push it 8m away, dealing [1] and set Knocked Down.</content>
 	<content contentuid="h2a478f21gf805g4cffg914eg44c5d0425a23">Scorched</content>
@@ -56,12 +59,15 @@
 	<content contentuid="hb81ef6f0g03e9g4c86gbfe0gce40dc2d3cca">Fire Resistance lowered.</content>
 	<content contentuid="hba7729bagc471g4df0gbddcgcbee0dda01a7">Scorching Flames</content>
 	<content contentuid="hbb6ba490g7b10g4181g8fc5g80312e0aa076">Split the guardian armour into 4 parts : Torso, Arms, Feet and Sword</content>
+	<content contentuid="hbe925bc9g68beg43fbgbb9dg77ad6b204ca9"></content>
 	<content contentuid="hc0723112g38a0g43f7ga88eg1faafce1300f">This character still has their master in sight. They will enrage if they lose it.</content>
 	<content contentuid="hc1c692f8g88ebg48e5gaa07g903286edb713">Spinning Shield</content>
 	<content contentuid="hc2df4be9gde58g4d19g95d9g27ab450ee63e">Magic Shaped Shield</content>
 	<content contentuid="hc2e954fcg03e8g4750gb2b6g3d53ea6e1aa6">Change the armor type provided by the Shapeshifting shield.</content>
+	<content contentuid="hc758fe2aga043g4615g9b73g9eed5a381191">Belly Drum</content>
 	<content contentuid="hc959a634ga7c6g4977ga2e1gaea916f775b4">Ground Swell</content>
 	<content contentuid="hcb9a7ad6g40c6g43c1ga472g212c99fdb1be">Summon Blood Heart</content>
+	<content contentuid="hce817705ga9bfg499eg93a2ge6cac7d78124">Rock Slide</content>
 	<content contentuid="hd120f279g4973g4acbg87efg3db750e7de28">Summon Spiritual Coyote</content>
 	<content contentuid="hd86ee4edg2d55g4ebag90dcg0aef8e46b383">The beast will enrage if the lose their master from sight, or if they die.</content>
 	<content contentuid="hdb9cf4b6gc7f2g4389gae15gecbfdd9ac83c">Metal pieces start to heat, increasing Fire resistance by [1], reducing Water resistance by [2], Physical and Piercing resistances by [3] and reflect 50% of the melee damage as Fire damage. Also grants immunity to Burning, set Burning on contact and give weapon-based attack a Fire damage bonus.</content>
@@ -72,5 +78,6 @@
 	<content contentuid="hf746a771g6ba2g40bfgad4bg6d129c5fbdc1">Elixir of the Runner</content>
 	<content contentuid="hf93846f3gabefg456eg8fadg7bad70e6caf0">Switch Shapeshifting Shield Armor</content>
 	<content contentuid="hfaa6c576gc444g43afg9048gbb3d105551a7">Split Armor</content>
+	<content contentuid="hfd6b3c42g35d8g4161gb097gedfd80b62b1f">Belly Drum</content>
 	<content contentuid="hff8cc292g6c41g4a6dgb501gec98b8273862">Water swipes treatrously the targets feet, dealing [1] and set Knocked Down for 1 turn. Can only target Wet character or on water surfaces.</content>
 </contentList>

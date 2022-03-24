@@ -1,0 +1,8 @@
+new entry "LX_STURDINESS_LOW"
+type "StatusData"
+data "StatusType" "CONSUME"
+data "ForGameMaster" "Yes"
+data "DisplayName" "LX_STURDINESS_LOW_DisplayName"
+data "Description" "LX_STURDINESS_LOW_Description"
+data "Icon" "Portrait_Quest_Wall_Magic_A"
+data "StackId" "Stack_LX_Sturdiness"

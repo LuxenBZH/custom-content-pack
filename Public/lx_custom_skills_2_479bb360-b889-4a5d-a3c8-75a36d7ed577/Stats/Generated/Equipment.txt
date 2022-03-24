@@ -12,3 +12,6 @@ new equipment "LX_GuardianArmor_Sword"
 add equipmentgroup
 add equipment entry "LX_WPN_GuardianArmor_Sword_B"
 
+new equipment "LX_Monsters_Abomination"
+add equipmentgroup
+add equipment entry "_LX_WPN_Monsters_Abomination"

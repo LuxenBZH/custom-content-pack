@@ -65,7 +65,10 @@ end
 ---@param context HitContext
 Ext.RegisterListener("StatusHitEnter", function(status, context)
     local pass, target = pcall(Ext.GetCharacter, status.TargetHandle) ---@type EsvCharacter
-    if not pass then return end
+    if not pass then 
+        pass, target = pcall(Ext.GetItem, status.TargetHandle) ---@type EsvItem
+        if not pass then return end
+    end
     local pass, instigator = pcall(Ext.GetCharacter, status.StatusSourceHandle) ---@type EsvCharacter
     if not pass then return end
     if instigator == nil then return end

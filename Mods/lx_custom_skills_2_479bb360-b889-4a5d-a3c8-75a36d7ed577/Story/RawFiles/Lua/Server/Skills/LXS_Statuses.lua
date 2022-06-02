@@ -117,12 +117,22 @@ RegisterTurnTrueEndListener(function(char)
 end)
 
 RegisterHitConditionListener("StatusHitEnter", "OnMelee", function(status, instigator, target, flags)
-    Ext.Print(flags.Critical, flags.Dodged, flags.Missed)
     if (flags.Critical or flags.Dodged or flags.Missed) and not target:HasTag("LX_SE_DuelistBucklerUsed") and target:GetStatus("LX_SE_DUELISTBUCKLER") then
         ApplyStatus(instigator.MyGuid, "LX_DUMMY_NOSHOCKWAVE", 6.0, 1)
         CharacterUseSkill(target.MyGuid, "Target_LX_DuelistBucklerBash", instigator.MyGuid, 1, 1, 0)
         ApplyStatus(target.MyGuid, "UNSHEATHED", -1, 1)
         SetTag(target.MyGuid, "LX_SE_DuelistBucklerUsed")
+    end
+    if not (flags.Missed or flags.Dodged) and instigator:GetStatus("LX_SE_SCORCHEDMIND") then
+        for i,s in pairs(instigator:GetStatuses()) do
+            local stat = Ext.GetStat(s).StatsId
+            if stat ~= "" and Ext.GetStat(stat).BonusWeapon ~= "" then
+                if not target:GetStatus("FIREBLOOD") then
+                    ApplyStatus(target.MyGuid, "FIREBLOOD", 6.0, 1, instigator.MyGuid)
+                    break
+                end
+            end
+        end
     end
 end)
 
@@ -135,9 +145,40 @@ end)
 --- @param target EsvItem|EsvCharacter
 RegisterHitConditionListener("StatusHitEnter", "OnHit", function(status, instigator, target, flags)
     if target:GetStatus("LX_STURDINESS_LOW") then
-        local threshold = Game.Math.GetAverageLevelDamage((target.LevelOverride or target.Stats.Level))*3
+        local threshold = Game.Math.GetAverageLevelDamage((target.LevelOverride or target.Stats.Level))*1
         if status.Hit.TotalDamageDone < threshold then
             status.Hit.DamageList:Clear()
+        end
+    elseif target:GetStatus("LX_STURDINESS") then
+        local threshold = Game.Math.GetLevelScaledDamage(target.LevelOverride or target.Stats.Level)*3
+        if status.Hit.TotalDamageDone < threshold then
+            NRD_HitStatusClearAllDamage(target.MyGuid, status.StatusHandle)
+        end
+    end
+end)
+
+-- --- @param target string GUID
+-- --- @param instigator string GUID
+-- --- @param amount integer
+-- --- @param handle double StatusHandle
+-- Ext.RegisterOsirisListener("NRD_OnHeal", 4, "before", function(target, instigator, amount, handle)
+--     -- Ext.Print(instigator, handle)
+--     local heal = Ext.GetStatus(target, handle) ---@type EsvStatusHeal
+--     if HasActiveStatus(target, "LX_MECHANIC") == 1 or IsTagged(target, "MECHANIC") then
+--         heal.HealAmount = 0
+--     end
+-- end)
+
+Ext.RegisterOsirisListener("CharacterStatusRemoved", 3, "before", function(character, status, causee)
+    if status == "LX_TEMPORARY_CHARACTER" then
+        RemoveTemporaryCharacter(character)
+    end
+end)
+
+Ext.RegisterOsirisListener("NRD_OnStatusAttempt", 4, "before", function(target, statusid, handle, instigator)
+    if statusid == "LX_TIMEBOMB" then
+        if Ext.GetCharacter(target).Stats.Movement <= 100 then
+            NRD_StatusPreventApply(target, handle, 1)
         end
     end
 end)

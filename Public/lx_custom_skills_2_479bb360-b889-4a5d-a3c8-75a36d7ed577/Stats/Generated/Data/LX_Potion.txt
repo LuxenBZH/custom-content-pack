@@ -3,3 +3,7 @@ type "Potion"
 data "Constitution" "7"
 // data "VitalityBoost" "25"
 data "WaterResistance" "15"
+
+new entry "Stats_LX_GrapplingBind"
+type "Potion"
+data "MovementSpeedBoost" "-50"

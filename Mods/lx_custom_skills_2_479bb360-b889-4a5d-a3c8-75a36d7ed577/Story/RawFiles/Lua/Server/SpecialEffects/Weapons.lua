@@ -38,7 +38,7 @@ Ext.RegisterOsirisListener("ItemTemplateEquipped", 2, "before", function(item, c
     end
 end)
 
-Ext.RegisterListener("ItemTemplateUnEquipped", 2, "before", function(item, character)
+Ext.RegisterOsirisListener("ItemTemplateUnEquipped", 2, "before", function(item, character)
     if item =="8ea9b1d5-8fe3-44c0-8729-ab092f3f297f" then
         RemoveStatus(character, "LX_SHAPESHIELD_PHYSICAL")
         RemoveStatus(character, "LX_SHAPESHIELD_MAGICAL")

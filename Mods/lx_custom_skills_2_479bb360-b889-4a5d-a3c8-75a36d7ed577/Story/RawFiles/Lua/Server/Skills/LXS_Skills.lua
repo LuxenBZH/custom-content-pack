@@ -11,6 +11,12 @@ RegisterHitConditionListener("StatusHitEnter", "OnHit", function(statusHit, inst
     local skill = string.gsub(statusHit.SkillId, "%_%-1", "")
     if skill == "Rush_LX_BashingCharge" then
         Ext.ExecuteSkillPropertiesOnTarget("Projectile_LX_Shove_6", instigator.NetID, target.NetID, instigator.WorldPos, "Target", false)
+    elseif skill == "Projectile_LX_GrapplingArrow" then
+        local pos = instigator.WorldPos
+        local pole = TemporaryCharacterCreateAtPosition(pos[1], pos[2], pos[3], "903f0c6c-5ed6-49b9-a838-d2f98ac5cb1e", 0)
+        ApplyStatus(target.MyGuid, "LX_GRAPPLING_BIND", -1, 1, pole)
+        ApplyStatus(target.MyGuid, "LX_GRAPPLING_ROPE_EFFECT", -1, 1, pole)
+        ApplyStatus(pole, "LX_TEMPORARY_CHARACTER", -1, 1, pole)
     end
     if flags.IsWeaponAttack then
         if instigator:GetStatus("LX_SE_BARBEDSWORD") then

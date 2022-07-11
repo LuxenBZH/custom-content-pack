@@ -10,8 +10,8 @@ Ext.RegisterOsirisListener("CharacterStatusRemoved", 3, "before", function(chara
         end
     end
     if status == "LX_MASSTELEPORT" then
-        ApplyStatus(character, "DEACTIVATED", -1.0, 1)
-        ApplyStatus(character, "SRP_VLOCK", -1.0, 1)
+        ApplyStatus(character, "DEACTIVATED", -1.0, 1, character)
+        ApplyStatus(character, "SRP_VLOCK", -1.0, 1, character)
         PlayEffect(character, "RS3_FX_GP_Status_Windwalker_01_Reappear", "Dummy_BodyFX")
     end
 end)
@@ -118,9 +118,9 @@ end)
 
 RegisterHitConditionListener("StatusHitEnter", "OnMelee", function(status, instigator, target, flags)
     if (flags.Critical or flags.Dodged or flags.Missed) and not target:HasTag("LX_SE_DuelistBucklerUsed") and target:GetStatus("LX_SE_DUELISTBUCKLER") then
-        ApplyStatus(instigator.MyGuid, "LX_DUMMY_NOSHOCKWAVE", 6.0, 1)
+        ApplyStatus(instigator.MyGuid, "LX_DUMMY_NOSHOCKWAVE", 6.0, 1, instigator.MyGuid)
         CharacterUseSkill(target.MyGuid, "Target_LX_DuelistBucklerBash", instigator.MyGuid, 1, 1, 0)
-        ApplyStatus(target.MyGuid, "UNSHEATHED", -1, 1)
+        ApplyStatus(target.MyGuid, "UNSHEATHED", -1, 1, target.MyGuid)
         SetTag(target.MyGuid, "LX_SE_DuelistBucklerUsed")
     end
     if not (flags.Missed or flags.Dodged) and instigator:GetStatus("LX_SE_SCORCHEDMIND") then
@@ -154,6 +154,9 @@ RegisterHitConditionListener("StatusHitEnter", "OnHit", function(status, instiga
         if status.Hit.TotalDamageDone < threshold then
             NRD_HitStatusClearAllDamage(target.MyGuid, status.StatusHandle)
         end
+    end
+    if target:GetStatus("LX_THIN_ICE") then
+        RemoveStatus(target.MyGuid, "LX_THIN_ICE")
     end
 end)
 

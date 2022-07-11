@@ -20,6 +20,13 @@
                     <attribute id="V2" value="0.0155029" type="6" />
                 </node>
                 <node id="IconUV">
+                    <attribute id="MapKey" value="rune_degeneration" type="22" />
+                    <attribute id="U1" value="0.203247" type="6" />
+                    <attribute id="U2" value="0.218628" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
                     <attribute id="MapKey" value="rune_firstblood" type="22" />
                     <attribute id="U1" value="0.140747" type="6" />
                     <attribute id="U2" value="0.156128" type="6" />
@@ -30,6 +37,27 @@
                     <attribute id="MapKey" value="rune_kamlan" type="22" />
                     <attribute id="U1" value="0.156372" type="6" />
                     <attribute id="U2" value="0.171753" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="rune_lostvision" type="22" />
+                    <attribute id="U1" value="0.218872" type="6" />
+                    <attribute id="U2" value="0.234253" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="rune_putrefaction" type="22" />
+                    <attribute id="U1" value="0.234497" type="6" />
+                    <attribute id="U2" value="0.249878" type="6" />
+                    <attribute id="V1" value="0.00012207" type="6" />
+                    <attribute id="V2" value="0.0155029" type="6" />
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" value="rune_scryer" type="22" />
+                    <attribute id="U1" value="0.250122" type="6" />
+                    <attribute id="U2" value="0.265503" type="6" />
                     <attribute id="V1" value="0.00012207" type="6" />
                     <attribute id="V2" value="0.0155029" type="6" />
                 </node>

@@ -20,6 +20,10 @@ local runeTagDescription = {
     LX_RUNE_FIRSTBLOOD = "During your turn, the first direct attack will have its damage increased by 25%, but the following attacks will do 20% less damage.",
     LX_RUNE_STOICISM = "If Walk it Off is active, at the end of your turn you are granted 1 turn of a random status in the following list: Fortified, Magic Shell, Mend Metal, Soothing Cold, Hasted, Clear Minded, Breathing Bubble or Vampiric Hunger.",
     LX_RUNE_KAMLAN = "When you cast a Hydrosophist skill, your magic armour is restored by 5% + 1% per Hydrosophist point.",
+    LX_RUNE_SCRYER = "Increase the effects of Clear Minded by 50% when you apply it.",
+    LX_RUNE_LOSTVISION = "Double the effects of Blind when you apply it.",
+    LX_RUNE_DEGENERATION = "Increase the Corrosive and Magic damage dealt by 25%.",
+    LX_RUNE_PUTREFACTION = "Corpse Explosion impacts now also apply Diseased for 1 turn."
 }
 
 local customRunes = {
@@ -27,7 +31,11 @@ local customRunes = {
     "LX_LOOT_Rune_Special_Darlan",
     "LX_LOOT_Rune_Special_FirstBlood",
     "LX_LOOT_Rune_Special_Stoicism",
-    "LX_LOOT_Rune_Special_Kamlan"
+    "LX_LOOT_Rune_Special_Kamlan",
+    "LX_LOOT_Rune_Special_Scryer",
+    "LX_LOOT_Rune_Special_LostVision",
+    "LX_LOOT_Rune_Special_Degeneration",
+    "LX_LOOT_Rune_Special_Putrefaction",
 }
 
 local tooltipRuneSlots = {

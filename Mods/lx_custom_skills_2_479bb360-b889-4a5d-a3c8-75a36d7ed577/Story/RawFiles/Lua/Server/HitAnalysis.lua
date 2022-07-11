@@ -64,6 +64,7 @@ end
 ---@param status EsvStatusHit
 ---@param context HitContext
 Ext.RegisterListener("StatusHitEnter", function(status, context)
+    status = context.HitStatus -- wtf???
     local pass, target = pcall(Ext.GetCharacter, status.TargetHandle) ---@type EsvCharacter
     if not pass then 
         pass, target = pcall(Ext.GetItem, status.TargetHandle) ---@type EsvItem
@@ -87,10 +88,10 @@ Ext.RegisterListener("StatusHitEnter", function(status, context)
     if (status.DamageSourceType == "Attack" or status.SkillId ~= "") then
         if HasActiveStatus(instigator.MyGuid, "LX_HUNTHUNTED") == 1 then
             SetVarInteger(instigator.MyGuid, "LXS_UsedHuntHunted", 1)
-            ApplyStatus(instigator.MyGuid, "LX_ONTHEHUNT", 6.0, 1)
+            ApplyStatus(instigator.MyGuid, "LX_ONTHEHUNT", 6.0, 1, instigator.MyGuid)
         end
         if CharacterIsInCombat(target.MyGuid) == 1 and HasActiveStatus(instigator.MyGuid, "LX_FIRSTBLOOD") == 1 then
-            ApplyStatus(instigator.MyGuid, "LX_FIRSTBLOOD_WEAKENED", 3.0, 1.0)
+            ApplyStatus(instigator.MyGuid, "LX_FIRSTBLOOD_WEAKENED", 3.0, 1.0, instigator.MyGuid)
         end
         if HasActiveStatus(instigator.MyGuid, "LX_BLOODLUST") == 1 and IsTagged(instigator.MyGuid, "LXS_BloodLustSatisfied") == 0 then
             SetTag(instigator.MyGuid, "LXS_BloodLustSatisfied")

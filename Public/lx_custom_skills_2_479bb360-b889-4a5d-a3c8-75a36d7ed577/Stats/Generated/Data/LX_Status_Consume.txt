@@ -276,3 +276,4 @@ data "Icon" "Item_DLC_Grenade_BreachingFire"
 data "FormatColor" "Red"
 data "LeaveAction" "Projectile_LX_TimeBomb"
 data "DieAction" "Projectile_LX_TimeBomb"
+

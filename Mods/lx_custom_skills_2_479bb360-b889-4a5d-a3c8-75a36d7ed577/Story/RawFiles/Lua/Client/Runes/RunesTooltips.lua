@@ -22,7 +22,7 @@ local runeTagDescription = {
     LX_RUNE_KAMLAN = "When you cast a Hydrosophist skill, your magic armour is restored by 5% + 1% per Hydrosophist point.",
     LX_RUNE_SCRYER = "Increase the effects of Clear Minded by 50% when you apply it.",
     LX_RUNE_LOSTVISION = "Double the effects of Blind when you apply it.",
-    LX_RUNE_DEGENERATION = "Increase the Corrosive and Magic damage dealt by 25%.",
+    LX_RUNE_DEGENERATION = "Increase Corrosive and Magic damages dealt by 25%.",
     LX_RUNE_PUTREFACTION = "Corpse Explosion impacts now also apply Diseased for 1 turn."
 }
 

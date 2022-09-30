@@ -1,4 +1,4 @@
---- @alias HookEvent string | "StatusHitEnter" | "ComputeCharacterHit"
+--- @alias HookEvent string | "StatusHitEnter" | "ComputeCharacterHit" | "BeforeCharacterApplyDamage" | "NRD_OnHit"
 --- @alias HitEvent string | "OnMelee" | "OnRanged" | "OnWeaponHit" | "OnHit"
 --- @alias HitConditionCallback fun(status:EsvStatusHit, instigator:EsvCharacter, target:EsvCharacter, flags:HitFlags):void
 
@@ -27,8 +27,10 @@ end
 
 function TriggerHooks(hook, event, ...)
     local params = {...}
-    for i,j in pairs(HitHooks[hook][event]) do
-        j.Handle(table.unpack(params))
+    if HitHooks[hook] then
+        for i,j in pairs(HitHooks[hook][event]) do
+            j.Handle(table.unpack(params))
+        end
     end
 end
 
@@ -103,4 +105,56 @@ Ext.RegisterListener("StatusHitEnter", function(status, context)
         TriggerHooks("StatusHitEnter", "OnMelee", status, instigator, target, flags)
     end
     -- SpecialEffects.OceansTrident(status.WeaponHandle, instigator, status, target, dodged, missed)
+end)
+
+Ext.RegisterOsirisListener("NRD_OnHit", 4, "before", function(target, instigator, damage, handle)
+    local status = Ext.GetStatus(target, handle)
+    local pass, target = pcall(Ext.GetCharacter, status.TargetHandle) ---@type EsvCharacter
+    if not pass then 
+        pass, target = pcall(Ext.GetItem, status.TargetHandle) ---@type EsvItem
+        if not pass then return end
+    end
+    local pass, instigator = pcall(Ext.GetCharacter, status.StatusSourceHandle) ---@type EsvCharacter
+    if not pass then return end
+    if instigator == nil then return end
+    local multiplier = 1.0
+    local flags = HitFlags:Create()
+    flags.Dodged = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Dodged") == 1
+    flags.Missed = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Missed") == 1
+    flags.Critical = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "CriticalHit") == 1
+    flags.Backstab = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Backstab") == 1
+    flags.DamageSourceType = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "DamageSourceType") == 1
+    flags.Blocked = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Blocked") == 1
+    flags.IsDirectAttack = status.DamageSourceType == "Attack" or status.SkillId ~= ""
+    flags.IsWeaponAttack = status.Hit.HitWithWeapon
+
+    TriggerHooks("NRD_OnHit", "OnHit", status, instigator, target, flags)
+    if Ext.GetItem(status.WeaponHandle) and not Game.Math.IsRangedWeapon(Ext.GetItem(status.WeaponHandle).Stats) then
+        TriggerHooks("StatusHitEnter", "OnMelee", status, instigator, target, flags)
+    end
+end)
+
+Ext.RegisterListener("BeforeCharacterApplyDamage", function(target, instigator, hit, causeType, impactDirection, context)
+    status = context.HitStatus
+    local pass, target = pcall(Ext.GetCharacter, status.TargetHandle) ---@type EsvCharacter
+    if not pass then 
+        pass, target = pcall(Ext.GetItem, status.TargetHandle) ---@type EsvItem
+        if not pass then return end
+    end
+    local pass, instigator = pcall(Ext.GetCharacter, status.StatusSourceHandle) ---@type EsvCharacter
+    if not pass then return end
+    if instigator == nil then return end
+    local multiplier = 1.0
+    local flags = HitFlags:Create()
+    flags.Dodged = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Dodged") == 1
+    flags.Missed = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Missed") == 1
+    flags.Critical = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "CriticalHit") == 1
+    flags.Backstab = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Backstab") == 1
+    flags.DamageSourceType = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "DamageSourceType") == 1
+    flags.Blocked = NRD_StatusGetInt(target.MyGuid, status.StatusHandle, "Blocked") == 1
+    flags.IsDirectAttack = status.DamageSourceType == "Attack" or status.SkillId ~= ""
+    flags.IsWeaponAttack = status.Hit.HitWithWeapon
+    if Ext.GetItem(status.WeaponHandle) and not Game.Math.IsRangedWeapon(Ext.GetItem(status.WeaponHandle).Stats) then
+        TriggerHooks("StatusHitEnter", "OnMelee", status, instigator, target, flags)
+    end
 end)

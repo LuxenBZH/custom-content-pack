@@ -1,9 +1,8 @@
-Ext.Require("Shared/_InitShared.lua")
+if not PersistentVars then
+    PersistentVars = {}
+end
 
-Ext.RegisterListener("SessionLoaded", function()
-    Ext.Print(Ext.GetStat("LX_Guardian_Armor").MaxSummons)
-    Ext.GetStat("LX_Guardian_Armor").MaxSummons = 10
-end)
+Ext.Require("Shared/_InitShared.lua")
 
 if Mods.LeaderLib then
     Mods.LeaderLib.Import(Mods.LuxensGameplayExpansion)

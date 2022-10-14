@@ -23,3 +23,13 @@ data "PhysicalResistance" "100"
 new entry "Stats_LX_Trauma"
 type "Potion"
 data "VitalityBoost" "-25"
+
+new entry "Stats_LX_BloodSummonBoost"
+type "Potion"
+data "VitalityBoost" "1"
+data "DamageBoost" "1"
+
+new entry "Stats_LX_Instability"
+type "Potion"
+data "VitalityBoost" "20"
+data "Talent" "Unstable"

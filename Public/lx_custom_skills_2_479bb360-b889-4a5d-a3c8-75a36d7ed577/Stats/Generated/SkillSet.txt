@@ -1,0 +1,8 @@
+new skillset "LX_Ice_Elemental"
+add skill "Projectile_IceShardStart"
+add skill "Target_FrostyShell"
+add skill "Shout_FrostAura"
+add skill "Zone_LX_IceBeamMonster"
+add skill "ProjectileStrike_HailStrike"
+add skill "Shout_GlobalCooling"
+add skill "Shout_IceBreaker"

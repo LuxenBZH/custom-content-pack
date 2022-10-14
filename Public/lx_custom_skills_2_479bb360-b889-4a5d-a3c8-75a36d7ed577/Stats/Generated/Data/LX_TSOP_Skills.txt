@@ -28,7 +28,7 @@ data "PrepareEffect" "RS3_FX_Skills_Totem_Prepare_Totem_Root_01,KeepRot;RS3_FX_S
 data "CastAnimation" "skill_cast_self_totem_01_cast"
 data "CastTextEvent" "cast"
 data "CastEffect" "RS3_FX_Skills_Totem_Cast_Self_Totem_Root_01:Dummy_Root;RS3_FX_Skills_Totem_Cast_Self_Totem_Dummy_01:Dummy_OverheadFX;RS3_FX_Skills_Totem_Cast_Self_Totem_Owl_01:Dummy_OverheadFX;RS3_FX_Skills_Totem_Cast_Self_Totem_Root_TextKey_01:Dummy_Root:cast"
-data "Magic Cost" "2"
+data "Magic Cost" "1"
 data "CanTargetCharacters" "Yes"
 data "CanTargetItems" "Yes"
 

@@ -130,8 +130,42 @@ Ext.RegisterOsirisListener("CharacterUsedSkill", 4, "before", function(character
         if collected then
             tiles = tiles + collected.CurrentLifeTime
         end
-        _P(collected)
         ApplyStatus(character, "LX_COLLECT_FROST", tiles, 1, character)
+    elseif skill == "Shout_LX_BloodSummonSpawn" then
+        local surfaces = {
+            "Blood", "BloodElectrified", "BloodBlessed", "BloodCursed", "BloodElectrifiedBlessed", "BloodElectrifiedCursed"
+        }
+        local char = Ext.GetCharacter(character)
+        local x = char.WorldPos[1]
+        local y = char.WorldPos[3]
+        local radius = Ext.GetStat(skill).AreaRadius
+        local grid = Ext.GetAiGrid()
+        local scale = grid.GridScale / 0.125
+        local tiles = 0
+        local scale = 0.5
+        for i = x-radius,x+radius, scale do
+            for j = y-radius,y+radius, scale do
+                local info = grid:GetCellInfo(i,j)
+                if ((i-x)*(i-x) + (j-y)*(j-y)) <= radius*radius then
+                    for i, surfaceType in pairs(surfaces) do
+                        if info ~= nil then
+                            local rawType = string.gsub(surfaceType, "Blessed", "")
+                            rawType = string.gsub(rawType, "Cursed", "")
+                            rawType = string.gsub(rawType, "Frozen", "")
+                            rawType = string.gsub(rawType, "Electrified", "")
+                            if (info.Flags & surfaceFlags[rawType]) == surfaceFlags[rawType] then
+                                tiles = tiles + 1
+                            end
+                        end
+                    end
+                end
+            end
+        end
+        _P(tiles)
+        local boost = Ext.PrepareStatus(character, "LX_BLOODSUMMON_BOOST", -1)
+        boost.StatsMultiplier = Ext.Round(tiles/10)
+        Ext.ApplyStatus(boost)
+        -- ApplyStatus(character, "LX_BLOODSUMMON_BOOST", tiles, 1, character)
     end
 end)
 
@@ -152,5 +186,11 @@ Ext.RegisterOsirisListener("CharacterUsedSkillOnTarget", 5, "before", function(c
             ApplyStatus(target.MyGuid, "LX_COLLECT_FROST", finalCharge, 1, character)
         end
         RemoveStatus(character, "LX_COLLECT_FROST")
+    end
+end)
+
+Ext.Osiris.RegisterListener("CharacterStatusApplied", 3, "before", function(character, status, causee)
+    if status == "SUMMONING_ABILITY" and Ext.ServerEntity.GetCharacter(character).RootTemplate.Id == "763b8e72-b754-40c2-bafa-01eb61d9d2ea" then
+        CharacterUseSkill(character, "Shout_LX_BloodSummonSpawn", character, 1, 1, 1)
     end
 end)
